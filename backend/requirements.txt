@@ -1,0 +1,6 @@
+Flask==3.1.3
+Flask-CORS==6.0.0
+boto3>=1.36.0
+beautifulsoup4>=4.12.0
+requests>=2.33.0
+apig-wsgi>=2.20.0

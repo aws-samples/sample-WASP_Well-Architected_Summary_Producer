@@ -1,0 +1,72 @@
+.workload-selector {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.workload-selector h2 {
+  color: #232F3E;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.workload-selector.loading,
+.workload-selector.error,
+.workload-selector.empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 8px;
+}
+
+.workload-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.workload-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.workload-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.workload-card h3 {
+  color: #232F3E;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.workload-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #687078;
+}
+
+.risk-summary {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.risk-high {
+  color: #D13212;
+  font-weight: 600;
+}
+
+.risk-medium {
+  color: #FF9900;
+  font-weight: 600;
+}

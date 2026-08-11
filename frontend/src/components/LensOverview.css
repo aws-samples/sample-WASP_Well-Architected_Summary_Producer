@@ -1,0 +1,179 @@
+/* Lens Overview Page */
+.lens-overview-page {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lens-overview-page h2 {
+  color: #232F3E;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.lens-overview-page h3 {
+  color: #232F3E;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Questions Answered Box */
+.lens-stat-box {
+  background: #F9F9F9;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.lens-stat-label {
+  color: #232F3E;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lens-stat-value {
+  color: #FF9900;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Version Box */
+.lens-info-box {
+  background: white;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.lens-info-label {
+  color: #232F3E;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lens-info-text {
+  color: #545B64;
+  font-size: 1rem;
+}
+
+/* Summary Section */
+.lens-section {
+  margin-bottom: 2rem;
+}
+
+/* Summary Table */
+.lens-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.lens-summary-table thead {
+  background: #0073BB;
+  color: white;
+}
+
+.lens-summary-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lens-summary-table th:last-child {
+  border-right: none;
+}
+
+.lens-summary-table th.risk-col {
+  text-align: center;
+}
+
+.lens-summary-table th.high-risk-col {
+  background: #0073BB;
+}
+
+.lens-summary-table th.medium-risk-col {
+  background: #0073BB;
+}
+
+.lens-summary-table th.no-risk-col {
+  background: #0073BB;
+}
+
+.lens-summary-table th.not-applicable-col {
+  background: #0073BB;
+}
+
+.lens-summary-table tbody tr {
+  border-bottom: 1px solid #D5DBDB;
+}
+
+.lens-summary-table tbody tr:hover {
+  background: #F9F9F9;
+}
+
+.lens-summary-table td {
+  padding: 0.75rem 1rem;
+  color: #232F3E;
+}
+
+.lens-summary-table td.lens-name-cell {
+  background: #E8F4F8;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.lens-summary-table td.center {
+  text-align: center;
+}
+
+.lens-summary-table td.risk-cell {
+  font-weight: 600;
+}
+
+.lens-summary-table td.risk-cell.clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lens-summary-table td.risk-cell.clickable:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.lens-summary-table td.has-high-risk {
+  background: #FADBD8;
+  color: #D13212;
+}
+
+.lens-summary-table td.has-high-risk.clickable:hover {
+  background: #F5B7B1;
+}
+
+.lens-summary-table td.has-medium-risk {
+  background: #FFF3CD;
+  color: #FF9900;
+}
+
+.lens-summary-table td.has-medium-risk.clickable:hover {
+  background: #FFE69C;
+}
+
+/* Lens Notes */
+.lens-notes-box {
+  margin-top: 2rem;
+}
+
+.lens-notes-text {
+  color: #FF9900;
+  font-style: italic;
+  padding: 1rem;
+  background: #FFF3CD;
+  border-radius: 4px;
+  border-left: 4px solid #FF9900;
+}

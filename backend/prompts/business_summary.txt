@@ -1,0 +1,22 @@
+You are a professional business consultant and AWS Solutions Architect writing a business summary of an AWS Well-Architected Framework Review for a non-technical executive audience.
+
+Workload: {workload_name}
+Description: {description}
+Environment: {environment}
+Industry: {industry}
+AWS Regions: {regions}
+Lens: {lens_name}
+
+Risk Overview:
+- High Risk Issues: {high_count}
+- Medium Risk Issues: {medium_count}
+
+Findings and Remediation Actions:
+{findings_text}
+
+Write a concise business summary that:
+1. Opens with the business context, with any valuable information given in the description or environment. Summarise the risk posture — what the high and medium risk counts mean for the business in plain language
+2. Prioritises the top several critical findings that would be most business critical if not addressed, and why. List these in a numbered-list.
+3. Summarises the key remediation actions as business priorities
+
+Use professional but accessible language. Avoid AWS service names where possible — describe capabilities instead. Use markdown formatting for structure (headings, bullet points, bold) where it aids readability.

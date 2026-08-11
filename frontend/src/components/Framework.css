@@ -1,0 +1,107 @@
+/* Detailed Pillar Cards */
+.pillars-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.pillar-card-detailed {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform 0.2s;
+}
+
+.pillar-card-detailed:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.pillar-card-detailed .pillar-header {
+    padding: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.pillar-card-detailed .pillar-description {
+    padding: 1.5rem;
+    background: white;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.pillar-card-detailed.operational-excellence .pillar-header {
+    background: #FF9900;
+}
+
+.pillar-card-detailed.security .pillar-header {
+    background: #E91E8C;
+}
+
+.pillar-card-detailed.performance .pillar-header {
+    background: #16A085;
+}
+
+.pillar-card-detailed.reliability .pillar-header {
+    background: #0073BB;
+}
+
+.pillar-card-detailed.cost .pillar-header {
+    background: #7D3C98;
+}
+
+.pillar-card-detailed.sustainability .pillar-header {
+    background: #5D6D7E;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+    background: #232F3E;
+    color: white;
+}
+
+.disclaimer-section h2 {
+    color: white;
+}
+
+.disclaimer-section .disclaimer {
+    background: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.3);
+}
+
+.disclaimer-section .disclaimer p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Disclaimer */
+.disclaimer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--bg);
+    border-left: 4px solid var(--text-light);
+    border-radius: 6px;
+}
+
+.disclaimer h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.disclaimer p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+    .pillars-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pillars-overview {
+        grid-template-columns: 1fr;
+    }
+}

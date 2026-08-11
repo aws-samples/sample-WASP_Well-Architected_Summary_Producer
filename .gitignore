@@ -1,0 +1,130 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+# Python lib (exclude only at repo root, not cdk/lib/)
+/lib/
+/lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+coverage/
+build/
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Docker
+.dockerignore
+
+# AWS
+.aws-sam/
+
+# Misc
+*.bak
+*.tmp
+*.temp
+.cache/
+
+# Test scripts
+backend/create_test_workload.py
+
+# Wiki (internal only)
+Wiki.md
+
+# IDE
+.vscode/
+
+# Threat model (internal only)
+docs/ThreatModel.md
+
+# Old demo GIFs (replaced)
+docs/WASPold*.gif
+docs/WASP2old*.gif
+
+# CDK
+cdk/node_modules/
+cdk/dist/
+cdk/cdk.out/
+*.js.map
+*.d.ts
+
+# Security evidence (internal only)
+docs/WASP Security Scan Evidence.txt
+docs/WASP Security Scan Evidence - *.txt
+docs/wasp-license-review.txt
+docs/wasp-license-review-*.txt
+docs/wasp-cdk-nag-*.txt
+docs/run-security-scan.sh
+docs/run-license-review.sh
+docs/run-cdk-nag.sh
+docs/checkov.yaml
+cdk/.checkov.yaml
+
+# Probe scan exports
+ProbeScanExport-*.csv

@@ -1,0 +1,168 @@
+/* Pillar Details Page */
+.pillar-details-page {
+    padding: 0;
+}
+
+.pillar-details-page > h2 {
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+.pillar-section {
+    margin-bottom: 3rem;
+}
+
+/* Pillar Title Slide */
+.pillar-title-slide {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-title-content {
+    text-align: center;
+    color: white;
+}
+
+.pillar-title-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.pillar-icon {
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+/* Pillar Slide */
+.pillar-slide {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar-slide-header {
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.pillar-slide-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.pillar-slide-content {
+    padding: 3rem;
+    flex: 1;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Slide Title with Icon */
+.slide-title-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.slide-title-with-icon h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.slide-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.warning-icon {
+    background: #FF9900;
+}
+
+.success-icon {
+    background: #1D8102;
+}
+
+/* Findings Summary List */
+.findings-summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.findings-summary-list li {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+.findings-summary-list li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.findings-summary-list li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.high-risk-item {
+    border-left: 6px solid var(--danger);
+}
+
+.medium-risk-item {
+    border-left: 6px solid var(--warning);
+}
+
+.success-item {
+    border-left: 6px solid var(--success);
+    color: var(--text);
+    font-weight: 500;
+}
+
+.no-findings {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+.placeholder-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}

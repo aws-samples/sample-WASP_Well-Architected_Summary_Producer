@@ -1,0 +1,214 @@
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.resource-card {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+.resource-card h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.resource-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resource-card li {
+    padding: 0.5rem 0;
+    color: var(--text);
+}
+
+/* Customer Enablement Ecosystem */
+.enablement-ecosystem {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 900px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ecosystem-hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hub-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF9900 0%, #EC7211 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(255, 153, 0, 0.3);
+    border: 4px solid white;
+}
+
+.hub-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hub-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.ecosystem-services {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.service-node {
+    position: absolute;
+    width: 240px;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--border);
+    transition: all 0.3s;
+}
+
+.service-node:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.service-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Position each service node in a circle */
+.service-1 {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-2 {
+    top: 15%;
+    right: 8%;
+}
+
+.service-3 {
+    bottom: 15%;
+    right: 8%;
+}
+
+.service-4 {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-5 {
+    bottom: 15%;
+    left: 8%;
+}
+
+.service-6 {
+    top: 15%;
+    left: 8%;
+}
+
+@media (max-width: 1024px) {
+    .enablement-ecosystem {
+        height: 1000px;
+    }
+    
+    .service-node {
+        width: 200px;
+        padding: 1rem;
+    }
+    
+    .hub-circle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hub-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .enablement-ecosystem {
+        height: auto;
+        min-height: 1200px;
+    }
+    
+    .service-node {
+        width: 180px;
+        padding: 1rem;
+    }
+    
+    .service-1 {
+        top: 0;
+    }
+    
+    .service-2 {
+        top: 180px;
+        right: 5%;
+    }
+    
+    .service-3 {
+        top: 380px;
+        right: 5%;
+    }
+    
+    .service-4 {
+        bottom: 380px;
+    }
+    
+    .service-5 {
+        bottom: 180px;
+        left: 5%;
+    }
+    
+    .service-6 {
+        top: 180px;
+        left: 5%;
+    }
+}

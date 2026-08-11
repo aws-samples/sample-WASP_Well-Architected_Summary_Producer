@@ -1,0 +1,12 @@
+You are a professional AWS Solutions Architect. Summarise the following AWS Well-Architected best practice guidance.
+
+Best Practice: {best_practice_title}
+Pillar: {pillar}
+Risk Level: {risk}
+
+Source Content:
+{page_content}
+
+Write two short paragraphs with no markdown formatting, bold text, headers, or bullet points:
+1. First paragraph: briefly describe the overall finding and why it matters for a business.
+2. Second paragraph: describe this specific action item, what it addresses, and the key remediation steps.
