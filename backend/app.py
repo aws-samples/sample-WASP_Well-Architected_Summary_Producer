@@ -893,22 +893,25 @@ def _fetch_url_text(url, max_chars=12000):
     try:
         from urllib.parse import urlparse
         parsed = urlparse(url)
-        if not parsed.scheme.startswith('http'):
+        if parsed.scheme not in ('http', 'https'):
             return ''
-        if not any(parsed.hostname == d or (parsed.hostname and parsed.hostname.endswith('.' + d)) for d in ALLOWED_DOMAINS):
-            app.logger.warning(f"Blocked fetch to non-allowed domain: {parsed.hostname}")
+        hostname = parsed.hostname or ''
+        if not any(hostname == d or hostname.endswith('.' + d) for d in ALLOWED_DOMAINS):
+            app.logger.warning(f"Blocked fetch to non-allowed domain: {hostname}")
             return ''
     except Exception:
         return ''
 
-    try:
-        # Parse fragment and fetch the base URL
-        fragment = ''
-        fetch_url = url
-        if '#' in url:
-            fetch_url, fragment = url.rsplit('#', 1)
+    # Build a sanitised URL from validated components
+    # This constructs a new string rather than passing the original user input to requests
+    safe_scheme = 'https' if parsed.scheme == 'https' else 'http'
+    safe_url = f"{safe_scheme}://{hostname}{parsed.path}"
+    if parsed.query:
+        safe_url += f"?{parsed.query}"
+    fragment = parsed.fragment
 
-        resp = http_requests.get(fetch_url, timeout=10, headers={
+    try:
+        resp = http_requests.get(safe_url, timeout=10, headers={  # noqa: S113
             'User-Agent': 'WASP/1.0 (Well-Architected Summary Producer)'
         })
         resp.raise_for_status()
