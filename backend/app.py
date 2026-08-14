@@ -884,6 +884,23 @@ def _fetch_url_text(url, max_chars=12000):
     - Returns the full page text as a string
     Returns empty string on any failure.
     """
+    # Validate URL against allowed AWS documentation domains to prevent SSRF
+    ALLOWED_DOMAINS = [
+        'docs.aws.amazon.com',
+        'wa.aws.amazon.com',
+        'repost.aws',
+    ]
+    try:
+        from urllib.parse import urlparse
+        parsed = urlparse(url)
+        if not parsed.scheme.startswith('http'):
+            return ''
+        if not any(parsed.hostname == d or (parsed.hostname and parsed.hostname.endswith('.' + d)) for d in ALLOWED_DOMAINS):
+            app.logger.warning(f"Blocked fetch to non-allowed domain: {parsed.hostname}")
+            return ''
+    except Exception:
+        return ''
+
     try:
         # Parse fragment and fetch the base URL
         fragment = ''
