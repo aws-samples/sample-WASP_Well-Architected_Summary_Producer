@@ -229,7 +229,7 @@ These estimates assume minimal single-user usage in us-east-1 as of July 2026. P
 
 ### Estimated Costs with AI Mode (Amazon Bedrock)
 
-Estimates based on [Claude Sonnet 4.5 pricing](https://aws.amazon.com/bedrock/pricing/) ($3.00 per 1M input tokens, $15.00 per 1M output tokens). Actual costs depend on number of findings, documentation page lengths, questions asked, and model selected.
+Estimates based on on-demand [Claude Sonnet 4.5 pricing](https://aws.amazon.com/bedrock/pricing/) ($3.00 per 1M input tokens, $15.00 per 1M output tokens). Actual costs depend on number of findings, documentation page lengths, questions asked, and model selected.
 
 | Service | Operation | Typical Tokens | Estimated Cost per Call |
 |---------|-----------|---------------|------------------------|
